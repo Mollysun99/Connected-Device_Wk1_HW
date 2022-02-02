@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+    integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+    crossorigin="anonymous"></script>
+
+    <script language="javascript" type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.29/lib/p5.serialport.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+    <title>light Controller</title>
+</head>
+
+
+
+<body>
+    <select class="port" id="serialport"></select>
+    <div class="title">YOUR ROOMS</div>
+    <input class="switch" type="button" onclick="changeStyle()" id="power" value="turn on"><span id="powerVal"></span><br>
+    function changeStyle(){
+        var element = document.getElementById("myDiv");
+        element.style.backgroundColor = "#00FF00";
+    }
+    <div class="bg">
+        <div class="subtitle">Living Room</div>
+    </div>
+    
+        <input class="slider" type="range" id="brightness" min="0" max="1000" value="0">
+    
+    
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
